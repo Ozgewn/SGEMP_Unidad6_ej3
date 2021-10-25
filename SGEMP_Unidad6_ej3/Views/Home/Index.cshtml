@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <p>Hola, son las @DateTime.Now.Hour:@DateTime.Now.Minute</p>
+    @{
+        if (DateTime.Now.Hour > 12)
+        {
+            <p>Han pasado las 12 </p>
+        }
+        else
+        {
+            <p>No han pasado las 12</p>
+        }
+    }
+</div>
